@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include "header.h"
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+int main() {
+
+	cout << "hello" << endl;
+
+	// normalnie long powinien mieæ 8 bajtów,
+	// ale kompilator VS robi 4 bajtów
+	// long long pomaga wymusiæ rozmiar 8 bajtów
+	unsigned long long a = 1;
+
+	// float explicite
+	float fnum = 1.5f;
+
+	cout << "int: " << sizeof(int) << endl;
+	cout << "float: " << sizeof(float) << endl;
+	cout << "unsigned long: " << sizeof(unsigned long) << endl;
+	cout << "unsigned long long: " << sizeof(unsigned long long) << endl;
+	cout << "double: " << sizeof(double) << endl;
+	cout << "long double: " << sizeof(long double) << endl;
+
+	print();
+
+	//sposoby na pozostanie w programie
+	//system("PAUSE"); //Visual Studio
+	//cin.get();
+
+	return 0;
+	// u¿ycie #include to po prostu kopiowanie zawartoœci pliku .h
+#include "bracket.h"
+
+	/*
+	int main(int argc, char* args[]) {
+
+	// zerowy argument to œcie¿ka i nazwa programu
+	cout << "no of args: " << argc << endl;
+	cout << "arg0: " << args[0] << endl;
+
+	return 0;
+	}
+	*/

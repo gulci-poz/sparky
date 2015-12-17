@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+
+// dyrektywy preprocesora wykonuj¹ sie przed kompilacj¹
+
+#define DEBUG 1
+
+#if DEBUG
+#define LOG(x) cout << x << endl
+#else
+#define LOG(x)
+#endif
+
+// prototyp funkcji
+// modyfikatory public, private nie dzia³aj¹ poza klas¹
+int add(int a, int b);
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+int main() {
+
+	LOG(add(3, 5));
+
+	return 0;
+}
+
+int add(int a, int b) {
+	return a + b;
+}

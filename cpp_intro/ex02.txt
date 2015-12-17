@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+
+#define WIDTH 800
+#define GULCI int main() {
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+GULCI
+
+	// proste zast¹pienie
+	cout << WIDTH << endl;
+
+	return 0;
+}
